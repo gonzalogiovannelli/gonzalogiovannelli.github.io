@@ -8,6 +8,10 @@ what was there) bumps the first. See `.githooks/version.js`.
 Entries before 2026-10-14 were rebuilt from the history: the commits had no prefix, so
 each one was classified by what it touched, counting its largest change.
 
+## 2.1.0 (2026-10-14)
+
+feat: add a link preview card for shared links
+
 ## 2.0.0 (2026-10-14)
 
 feat!: replace the template site with a new single page

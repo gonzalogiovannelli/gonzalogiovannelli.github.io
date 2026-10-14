@@ -1,0 +1,5 @@
+#!/bin/sh
+# Bumps VERSION, writes the CHANGELOG and tags the commit, from its prefix.
+# See .githooks/version.js.
+command -v node >/dev/null 2>&1 || { echo "post-commit: node not found, the version does not bump."; exit 0; }
+node "$(git rev-parse --show-toplevel)/.githooks/version.js" post-commit

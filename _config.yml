@@ -1,0 +1,4 @@
+# GitHub Pages: the repo version files are not part of the site.
+exclude:
+  - CHANGELOG.md
+  - VERSION

@@ -1,0 +1,5 @@
+#!/bin/sh
+# Rejects a commit whose message has no type prefix (feat, fix, chore).
+# See .githooks/version.js.
+command -v node >/dev/null 2>&1 || { echo "commit-msg: node not found, skipping the prefix check."; exit 0; }
+node "$(git rev-parse --show-toplevel)/.githooks/version.js" commit-msg "$1"
